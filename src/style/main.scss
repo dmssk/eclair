@@ -1,6 +1,7 @@
 @import "imports";
 
-body {
+body,
+html {
   font-family: 'Futura Book', sans-serif;
   font-size: $body-fz;
   margin: 0;
@@ -11,20 +12,67 @@ body {
   a {
     color: $default-c;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.4rem;
     display: block;
     padding: 15px 16px;
+  }
+
+  &__bottom {
+    padding: 0 25px 24px;
+
+    a {
+      position: relative;
+      text-transform: uppercase;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        opacity: 0;
+        background: $default-c;
+        transition: 0.4s all;
+      }
+
+      &:focus,
+      &:hover {
+        outline: none;
+
+        &::before {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .logo {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      padding: 0;
+    }
   }
 
   &__top {
     display: flex;
     align-items: center;
     padding: 24px 25px;
-  }
 
-  &__bottom {
-    a {
-      text-transform: uppercase;
+    a:not(.logo__link) {
+      border-bottom: 1px solid transparent;
+      transition: 0.3s border-bottom-color;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        border-bottom-color: $default-c;
+      }
     }
   }
 
@@ -39,17 +87,6 @@ body {
       ul {
         justify-content: center;
       }
-    }
-  }
-
-  .logo {
-    flex-basis: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    a {
-      padding: 0;
     }
   }
 
@@ -70,6 +107,7 @@ body {
   }
 }
 
+// common elements
 .text-center {
   text-align: center;
 }
@@ -86,8 +124,61 @@ body {
     padding: 0;
     width: 20px;
     height: 20px;
-    font-size: 10px;
+    font-size: 1rem;
     text-align: center;
     border-radius: 50%;
+  }
+}
+
+.btn {
+  display: inline-block;
+  min-width: 153px;
+  font-size: 1.8rem;
+  line-height: 44px;
+  text-decoration: none;
+  border: 1px solid $default-c;
+  transition: 0.3s all;
+
+  &--default {
+    background: transparent;
+    color: $default-c;
+  }
+
+  &--warning {
+    background: $default-c;
+    color: $white-c;
+
+    &:hover {
+      color: $default-c;
+      background: transparent;
+    }
+  }
+
+  &:active {
+    transition: none;
+    transform: scale(0.97);
+  }
+}
+
+//section
+.hero {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: url("./../static/img/hero-bg.jpg") no-repeat center center / cover;
+
+  h1 {
+    font-size: 4.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 2.5rem;
+    max-width: 650px;
+    margin-bottom: 20px;
   }
 }
