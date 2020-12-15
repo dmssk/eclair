@@ -1,10 +1,64 @@
 @import "imports";
 
 body {
-  font-family: 'Futura Book C', sans-serif;
+  font-family: 'Futura Book', sans-serif;
+  font-size: $body-fz;
+  margin: 0;
+  padding: 0;
 }
 
-img {
-  display: block;
-  margin: 50px auto;
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    padding: 24px 25px;
+
+    a {
+      color: $default-c;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+
+  &__nav {
+    flex-basis: 40%;
+
+    ul {
+      display: flex;
+    }
+
+    &--top {
+      a {
+        display: block;
+        padding: 15px 16px;
+      }
+    }
+  }
+}
+
+.logo {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bucket {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: flex-end;
+
+  &__img {
+    margin-right: 5px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 15px 16px;
+  }
+}
+
+.text-center {
+  text-align: center;
 }

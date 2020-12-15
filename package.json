@@ -54,6 +54,7 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "reset-css": "^5.0.1"
   }
 }
