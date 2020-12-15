@@ -8,15 +8,23 @@ body {
 }
 
 .header {
+  a {
+    color: $default-c;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 15px 16px;
+  }
+
   &__top {
     display: flex;
     align-items: center;
     padding: 24px 25px;
+  }
 
+  &__bottom {
     a {
-      color: $default-c;
-      text-decoration: none;
-      font-size: 14px;
+      text-transform: uppercase;
     }
   }
 
@@ -27,38 +35,59 @@ body {
       display: flex;
     }
 
-    &--top {
-      a {
-        display: block;
-        padding: 15px 16px;
+    &--bottom {
+      ul {
+        justify-content: center;
       }
     }
   }
-}
 
-.logo {
-  flex-basis: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .logo {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.bucket {
-  flex-basis: 40%;
-  display: flex;
-  justify-content: flex-end;
-
-  &__img {
-    margin-right: 5px;
+    a {
+      padding: 0;
+    }
   }
 
-  &__item {
+  .bucket {
+    flex-basis: 40%;
     display: flex;
-    align-items: center;
-    padding: 15px 16px;
+    justify-content: flex-end;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 15px 16px;
+    }
+
+    &__text {
+      margin: 0 5px;
+    }
   }
 }
 
 .text-center {
   text-align: center;
+}
+
+.tip {
+  color: $white-c;
+  padding: 4px 8px 2px;
+  background: $tip-c;
+
+  &--round {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 50%;
+  }
 }
