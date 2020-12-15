@@ -1,16 +1,18 @@
 /* stylelint-disable */
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1380px
+) !default;
+
 @import "~reset-css";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities/spacing";
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1350px
-);
 
 @import "./fonts";
 @import "./variables";
