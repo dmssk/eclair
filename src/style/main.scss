@@ -7,6 +7,9 @@ html {
   margin: 0;
   padding: 0;
 }
+button {
+  font-family: 'Futura Book', sans-serif;
+}
 
 *,
 *::before,
@@ -255,6 +258,61 @@ h2 {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 15px;
+  }
+
+  &__actions {
+    display: inline-block;
+    position: relative;
+
+    &:hover {
+      .item__quantity {
+        transform: translate(0, -100%);
+      }
+    }
+  }
+
+  &__quantity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $default-c;
+    background: $white-c;
+    z-index: 1;
+    transition: .2s transform;
+  }
+
+  &__quantity-text {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    position: relative;
+    z-index: 2;
+    background: $white-c;
+
+    &:hover {
+      background: $default-c;
+    }
+  }
+
+  &__btn {
+    flex-basis: 25%;
+    height: 100%;
+    box-shadow: none;
+    border: none;
+    background: none;
+    font-size: 2.3rem;
+    cursor: pointer;
+    transition: .3s all;
+
+    &:hover {
+      background: #eee;
+    }
   }
 
   &:hover {
