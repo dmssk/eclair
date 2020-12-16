@@ -10,7 +10,7 @@ $(window).on('load', function(e) {
   
 
   $('.carousel').slick({
-    infinite: false,
+    infinite: true,
     prevArrow: $('.buttons .prev'),
     nextArrow: $('.buttons .next')
   })
