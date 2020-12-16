@@ -327,6 +327,7 @@ h2 {
 
 .items-carousel {
   padding-top: 70px;
+  overflow-x: hidden;
 }
 
 .carousel {
@@ -388,5 +389,13 @@ h2 {
     .prev {
       transform: rotate(180deg);
     }
+  }
+}
+
+.about {
+  margin-top: 70px;
+
+  p {
+    font-size: 2.5rem;
   }
 }
