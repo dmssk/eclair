@@ -55,6 +55,43 @@
                 </ul>
             </nav>
         </div>
+        <div class="header__bottom fixed">
+            <div class="container">
+                <div class="logo">
+                    <a href="/" class="logo__link">
+                        <img src="./static/img/logo.svg" alt="ECLAIR">
+                    </a>
+                </div>
+                <nav class="header__nav header__nav--bottom">
+                    <ul>
+                        <li><a href="#">Эклеры</a></li>
+                        <li><a href="#">Круассаны</a></li>
+                        <li><a href="#">Корзинки</a></li>
+                        <li><a href="#">Макаруны</a></li>
+                        <li><a href="#">Завтраки и обеды</a></li>
+                        <li><a href="#">Пирожные</a></li>
+                        <li><a href="#">Торты</a></li>
+                        <li><a href="#">Пироги</a></li>
+                        <li><a href="#">Хлеб</a></li>
+                        <li><a href="#">Напитки</a></li>
+                        <li><a href="#">Другое</a></li>
+                    </ul>
+                </nav>
+                <div class="bucket">
+                    <a href="#" class="bucket__item">
+                        <i class="bucket__img">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.2669 19.1646L16.0499 5.61135C16.0167 5.24122 15.7065 4.95772 15.3349 4.95772H12.8252V3.8258C12.8252 1.71625 11.109 0 8.99957 0C6.89021 0 5.17425 1.71625 5.17425 3.8258V4.95772H2.6628C2.29123 4.95772 1.98102 5.24122 1.94781 5.61135L0.726015 19.2179C0.708021 19.4187 0.775212 19.6177 0.911222 19.7665C1.04723 19.9152 1.23952 19.9999 1.441 19.9999H16.5568C16.5574 19.9999 16.5581 19.9999 16.5587 19.9999C16.9553 19.9999 17.2766 19.6785 17.2766 19.282C17.2765 19.2421 17.2732 19.2028 17.2669 19.1646ZM6.60996 3.8258C6.60996 2.50791 7.68196 1.43572 8.99966 1.43572C10.3175 1.43572 11.3896 2.50791 11.3896 3.8258V4.95772H6.60996V3.8258ZM2.22624 18.5643L3.31911 6.39343H5.17425V7.67716C5.17425 8.0736 5.49556 8.39501 5.8921 8.39501C6.28865 8.39501 6.60996 8.0736 6.60996 7.67716V6.39343H11.3896V7.67716C11.3896 8.0736 11.7109 8.39501 12.1074 8.39501C12.504 8.39501 12.8253 8.0736 12.8253 7.67716V6.39343H14.6787L15.7716 18.5643H2.22624Z"
+                                    fill="black" />
+                            </svg>
+                        </i>
+                        <span class="bucket__text">Корзина</span>
+                        <span class="tip tip--round">12</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="hero" id="hero">
         <h1>вместе с eclair</h1>
@@ -835,7 +872,7 @@
                                     <image id="image0" width="96" height="96"
                                         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFv0lEQVR4nO3cW0wcVRwG8O+cvci27HLZpRd6oQuB0kJBiag1NlGUvrTUxL5oNGmj1aTxpRof1MTHNvEWY5oalTbRRKt9MaaRWNukLWpjMQUq1EKtbRAJbMoutwVadmdnfABXlp0ZdnbPMOr+f0/smTnnDOfbOTPDLgcghBBCCCGEEEIIIYQQQggh5P+MpbpjKBSukrm8jwGNADYAWG7eYf0nTQHoU4DTXOZHvV731VQqLRqAoijO0NjEuwD2A7BleJDZIgbgiDff8wpjLKq3o24Ac4PfAuAxkUeXRc548z079ELgerXn3vk0+OlrDI1NvK23g+YZEAqFqxQu/wKadjIlIcZrfD53j9pGzTNA4fLzoMEXwa7Y5H1aG/WmoEYTDiYrMSjbtbbpBbDehGPJUqxEa4teALkmHEm2cmtt0L0LIuajACxGAViMArAYBWAxCsBiFIDFKACLUQAWowAsRgFYzG60wt7ze1TL3Q436orq8GTZU3DZXKr7TEu3ceLGl+gItiMcDavu88nDn6bU38L9/tYRbMfJP05iYGoAkixp1tv6dQTXJxTVNhaT5wTKPAyNa214toLDm5PyR+tJhJ0B4WgYrYOtaO5p1tynuedjtA6d1xz8TLXduojDVw6jL9ynOvjz7SxJ/1cfjwAdQQVvXpZQ91UEJ27E0m5L+BTUGexAYDqQVB6YHsLlUKfo7uIicgTHfz8OBam9q1+otGGZ4fM/2ZQEvHhBQnNveiEID0CBojrQl0OdKQ9OOs4NnsN4ZDzl/YtcDK/eLSCBOW9cknBlxPjvZ8pFuHukO6msS6VMFEmO4lT/KcP19m+2YbdfzBBIMvBWl/GzwJQAro1fw0xsJv56Rp7Bb+PXzegKANA69D1GIyOG6zEAHzzkwN4KMR99nxmIYSZm7CwwJQBJltAz9s8Xw66O/gpJ1v1+UgZ9xfDtny1p17cx4J0H7Dje4ECpJ/27GQCIykD/lLE6pj0HzJ+GukNXzOoGPwZ+QPBOKON2tq/luPi4E188OntGbM5P7/bSd5exOsKuQg3FDTg7eDb+umukK/5z92hXwr5Plz+Dz69/lnGfkhxDS/83CWWMMRysP4TXf37NcHucAY1rOBrXLN3zqbCetq56MOH18O1hBKYDCEwPYfj2cLzczu3YtmqbkD5/unUBw3eGE8rqi+pRvKxYSPtLQdgZUOYuQ64jF5PRyXhZ90h30q3nxryNyLHlZNyfrMho6U+c+xkYmkp2GWpH60nbqBWuFTh47yE4bA5D9YSdAZxxVBVUJ5S1By+hI9ieULalsEZIf2232pIe+O7x1WHd8nVC2jfCzm3YU7HX8OADgi/Ctd7Ewe0d60XvWO+CfWqF9PVRz4dJZU0lTULaNsJlc+FA9cuoKqhKq764R0HMvrsZY1AU9XvhopwirF62WmSXcbXeWvjdflPaXsjJnVjpWon7Vt6PR1Y3INeR/v+qCA3A7XDD7/bj5sRN1e01XjHTj5qd68W++7X+2iqa8PutGp05vqZQzPSzUHVhNcrzyk1p22wmBKA+yA7uwKaCTaK7AwDsMnjn828iPAC/2w+305NUXplfCSd3iu4OlfmVqMjbKLzdpSI8AMYYagqSpyEzph/OOJ7w7xbe7lIy5Zlb7WKrd20wys7tKPWU4sCWl1CRVyGsXSto/uUoODpu3qcnWchXkKc61vStCItRABajACxGAViMArAYBWAxCsBiFIDFKACLUQAWowAspheAOd8hz04TWhv0Aug34UCylKI5ltoLNgGnzTmY7MMUaH51WzMALvOjmF39j2RGUmR+TGujZgBz614eMeWQsogCHPb5PL1a2xdbttIxt2wlLV+WDgWnvQWenWkvW8kYi3rzPTsAvA9A/7/eyHySAry32OADxpYu3ixz+bnZBejYBtCSZgtNAkofA75TYrZjWstUEkIIIYQQQgghhBBCCCGEEJJd/gI4UpDjj6vrDAAAAABJRU5ErkJggg==" />
                                 </defs>
-                            </svg> 
+                            </svg>
 
                         </div>
                     </div>

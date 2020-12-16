@@ -7,7 +7,20 @@ if (module.hot) {
 
 
 $(window).on('load', function(e) {
-  
+
+  function scrollHandler () {
+    if ($(window).scrollTop() > 400) {
+      $('.header__bottom.fixed').addClass('active')
+    } else {
+      $('.header__bottom.fixed').removeClass('active')
+    }
+  }
+  scrollHandler()
+
+  $(window).on('scroll', function() {
+    scrollHandler()
+  })
+
 
   $('.carousel').slick({
     infinite: true,

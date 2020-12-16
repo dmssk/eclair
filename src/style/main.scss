@@ -8,6 +8,10 @@ html {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 button {
   font-family: 'Futura Book', sans-serif;
 }
@@ -54,6 +58,41 @@ button {
           width: 100%;
           opacity: 1;
         }
+      }
+    }
+
+    &.fixed {
+      position: fixed;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      transition: 0.4s all;
+      background: $white-c;
+      z-index: 5;
+
+      padding: 12px 0;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header__nav {
+        flex-basis: auto;
+      }
+
+      .logo {
+        max-width: 83px;
+        flex-basis: auto;
+      }
+
+      .bucket {
+        flex-basis: auto;
+      }
+
+      &.active {
+        transform: translate(0, 100%);
       }
     }
   }
