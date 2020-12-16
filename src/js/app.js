@@ -1,3 +1,6 @@
+import $ from "jquery";
+import 'slick-carousel'
+
 if (module.hot) {
   module.hot.accept()
 }
@@ -6,6 +9,11 @@ if (module.hot) {
 $(window).on('load', function(e) {
   
 
+  $('.carousel').slick({
+    infinite: false,
+    prevArrow: $('.buttons .prev'),
+    nextArrow: $('.buttons .next')
+  })
   $('.item__actions').on('click', function(e) {
     let num = +$(this).find('.item__quantity-text').text()
     

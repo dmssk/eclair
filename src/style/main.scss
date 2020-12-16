@@ -323,3 +323,70 @@ h2 {
     }
   }
 }
+
+
+.items-carousel {
+  padding-top: 70px;
+}
+
+.carousel {
+  width: 378px;
+  max-width: 100%;
+
+  
+
+  .slick-slide {
+    margin-right: 40px;
+    outline: none;
+  }
+
+  &.overflow-visible {
+    .slick-list {
+      overflow: visible;
+    }
+  }
+}
+.carousel-wrap {
+  margin-top: 50px;
+  position: relative;
+
+  .buttons {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+
+    button {
+      pointer-events: all;
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      circle {
+        transition: 0.3s all;
+      }
+
+      &:hover {
+        circle {
+          opacity: 0.9;
+        }
+      }
+    }
+
+    .prev {
+      transform: rotate(180deg);
+    }
+  }
+}
