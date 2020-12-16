@@ -7,6 +7,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 button {
   font-family: 'Futura Book', sans-serif;
 }
@@ -248,8 +249,8 @@ h2 {
       margin-right: 5px;
     }
 
-    .price-old + .price,
-    .price-old + .price + .currency {
+    .price-old+.price,
+    .price-old+.price+.currency {
       color: $tip-c;
     }
   }
@@ -334,7 +335,7 @@ h2 {
   width: 378px;
   max-width: 100%;
 
-  
+
 
   .slick-slide {
     margin-right: 40px;
@@ -347,6 +348,7 @@ h2 {
     }
   }
 }
+
 .carousel-wrap {
   margin-top: 50px;
   position: relative;
@@ -397,5 +399,42 @@ h2 {
 
   p {
     font-size: 2.5rem;
+  }
+}
+
+.footer {
+  padding: 32px 0;
+  margin-top: 10rem;
+  background: #1A1A1A;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__item {
+    color: $white-c;
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: $white-c;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      line-height: 1.2em;
+    }
   }
 }
