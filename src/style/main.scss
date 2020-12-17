@@ -8,6 +8,13 @@ html {
   padding: 0;
 }
 
+select,
+option,
+textarea,
+input {
+  font-family: 'Futura Book', sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -263,6 +270,15 @@ h2 {
     font-size: 2.5rem;
     max-width: 650px;
     margin-bottom: 20px;
+  }
+
+  &--small {
+    min-height: 277px;
+    background-image: url('./../static/img/hero-small-img.jpg');
+
+    h1 {
+      font-weight: 400;
+    }
   }
 }
 
@@ -598,14 +614,13 @@ h2 {
   }
 }
 
-.personal-section {
+.form-wrapper {
   background: #f6f6f7;
   padding: 5rem 0 10rem;
   margin-bottom: -10rem;
 }
 
 .form {
-
   &--default {
     width: 400px;
     max-width: 100%;
@@ -622,6 +637,12 @@ h2 {
       font-size: 1.4rem;
     }
 
+    textarea {
+      height: 168px;
+    }
+
+    textarea,
+    select,
     input {
       display: block;
       width: 100%;
@@ -631,11 +652,42 @@ h2 {
       border: 1px solid $default-c;
       font-size: 1.6rem;
       color: $default-c;
+      resize: none;
     }
   }
 
   &__submit {
     display: flex;
     justify-content: center;
+  }
+}
+
+.cake-form {
+  padding: 72px 0;
+
+  .item {
+    cursor: pointer;
+
+    &.active {
+      .item__name {
+        color: #d5a203;
+      }
+
+      .item__picture {
+        border: 2px solid #d5a203;
+      }
+    }
+  }
+
+  .item__name {
+    font-size: 1.6rem;
+  }
+
+  .item__picture {
+    &:hover {
+      img {
+        transform: none;
+      }
+    }
   }
 }

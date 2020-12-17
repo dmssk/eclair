@@ -60,4 +60,13 @@ $(window).on('load', () => {
       $(this).find('.item__quantity-text').text(1);
     }
   });
+
+  $('.cake-form .item').on('click', function cakeFormClickHandler() {
+    $('.cake-form .item').removeClass('active');
+    $(this).addClass('active');
+  });
+  $('.add-address').on('click', function addAddressHandler(e) {
+    e.preventDefault();
+    $('.address-field').first().clone().appendTo('.fields');
+  });
 });
