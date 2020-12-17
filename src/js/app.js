@@ -1,14 +1,13 @@
-import $ from "jquery";
-import 'slick-carousel'
+import $ from 'jquery';
+import 'slick-carousel';
 
 if (module.hot) {
   module.hot.accept();
 }
 
 
-
 // eslint-disable-next-line no-undef
-$(window).on('load', (e) => {
+$(window).on('load', () => {
   function scrollHandler() {
     // eslint-disable-next-line no-undef
     if ($(window).scrollTop() > 400) {
@@ -46,7 +45,7 @@ $(window).on('load', (e) => {
   });
 
   $('.item__actions').on('click', function actionItemsClickHandler(e) {
-    const num = +$(this).find('.item__quantity-text').text()
+    const num = +$(this).find('.item__quantity-text').text();
 
     if ($(e.target).hasClass('item__btn--minus') && num > 1) {
       $(this).find('.item__quantity-text').text(num - 1);
