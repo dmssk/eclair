@@ -691,3 +691,22 @@ h2 {
     }
   }
 }
+
+.page-404 {
+  h1 {
+    font-size: 12rem;
+    font-weight: bold;
+    margin-top: 10vh;
+    margin-bottom: 48px;
+  }
+
+  p {
+    font-size: 3.2rem;
+    font-weight: bold;
+
+    a {
+      color: #d5a203;
+      text-decoration: none;
+    }
+  }
+}
