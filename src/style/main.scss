@@ -73,13 +73,10 @@ button {
       transition: 0.4s all;
       background: $white-c;
       z-index: 5;
-      padding: 12px 0;
-
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       .header__nav {
         flex-basis: auto;
@@ -156,6 +153,24 @@ button {
     &__text {
       margin: 0 5px;
     }
+
+    .personal-cabinet {
+      transition: 0.3s all;
+
+      path {
+        fill: $default-c;
+        transition: 0.3s all;
+      }
+
+      &.active,
+      &:hover {
+        color: #d5a203;
+
+        path {
+          fill: #d5a203;
+        }
+      }
+    }
   }
 }
 
@@ -203,7 +218,7 @@ h2 {
   padding: 13px 32px 11px;
 
   &--default {
-    background: transparent;
+    background: $white-c;
     color: $default-c;
 
     &:hover {
@@ -567,5 +582,60 @@ h2 {
     .slick-current {
       border: 1px solid $default-c;
     }
+  }
+}
+
+.collected-score {
+  padding: 50px 0;
+
+  h2 {
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+
+    &.score {
+      color: #d5a203;
+    }
+  }
+}
+
+.personal-section {
+  background: #f6f6f7;
+  padding: 5rem 0 10rem;
+  margin-bottom: -10rem;
+}
+
+.form {
+
+  &--default {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &__input {
+    display: block;
+    margin-bottom: 24px;
+
+    span {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 1.4rem;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px 12px;
+      background: $white-c;
+      box-shadow: none;
+      border: 1px solid $default-c;
+      font-size: 1.6rem;
+      color: $default-c;
+    }
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
   }
 }
