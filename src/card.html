@@ -93,18 +93,60 @@
         </div>
     </div>
 </header>
-<section class="hero" id="hero">
-    <h1>вместе с eclair</h1>
-    <p>
-        Отвлекитесь от суеты рабочих будних, бешеного ритма города и проведите время в одной из наших
-        кондитерских.
-        Насладитесь классическими французскими макарунами.
-    </p>
-    <a href="#" class="btn btn--warning">Подробнее</a>
+
+<section id="card">
+    <div class="container">
+        <div class="flex-between align-center">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="/">главная</a></li>
+                <li class="breadcrumbs__item"><a href="/">круассаны</a></li>
+                <li class="breadcrumbs__item">Карамельный</li>
+            </ul>
+            <a href="/">
+                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.02148" y="22.6479" width="32" height="2" transform="rotate(-45 1.02148 22.6479)"
+                          fill="black"/>
+                    <rect x="1.41406" width="32" height="2" transform="rotate(45 1.41406 0)" fill="black"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="row card-item">
+            <div class="col-lg-6">
+                <div class="card-item__image items-switch">
+                    <div class="items-switch__top">
+                        <img src="./static/img/item-1.jpg" alt="">
+                        <img src="./static/img/item-2.jpg" alt="">
+                    </div>
+                    <div class="items-switch__bottom">
+                        <img src="./static/img/item-1.jpg" alt="">
+                        <img src="./static/img/item-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 card-item__text">
+                <h1 class="heading mt-5">Карамельный</h1>
+                <div class="item__price">
+                    <span class="price-old">299,00</span>
+                    <span class="price">199,00</span>
+                    <span class="currency">руб.</span>
+                </div>
+                <p class="description">
+                    Отличная новость для любителей этого таящего во рту французского кондитерского изделия! <br>
+                    Встречайте новый вкус – «Капучино» <br>
+                    Таким образом уже 17 вкусов макарон ждут вас на прилавках
+                </p>
+                <p class="description"><b>Начинка:</b> заварной малиновый крем-фреш</p>
+                <p class="description"><b>Декор:</b> итальянская меренга, ягода</p>
+                <a href="#" class="mt-5 btn btn--warning">Добавить в корзину</a>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section class="items-carousel" id="carousel">
-    <h2 class="text-center">Новое и популярное</h2>
+    <h2 class="text-center">Попробуйте также</h2>
     <div class="carousel-wrap">
         <div class="buttons">
             <button class="prev">
@@ -141,10 +183,10 @@
         <div class="container">
             <div class="carousel overflow-visible">
                 <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-1.jpg" alt="">
+                    <div class="item__picture">
+                        <img src="./static/img/item.jpg" alt="">
                         <span class="tip">Акция</span>
-                    </a>
+                    </div>
                     <div class="item__summary">
                         <div class="item__price">
                             <span class="price-old">299,00</span>
@@ -165,10 +207,10 @@
                     </div>
                 </div>
                 <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-2.jpg" alt="">
+                    <div class="item__picture">
+                        <img src="./static/img/item.jpg" alt="">
                         <span class="tip">Акция</span>
-                    </a>
+                    </div>
                     <div class="item__summary">
                         <div class="item__price">
                             <span class="price-old">299,00</span>
@@ -189,10 +231,10 @@
                     </div>
                 </div>
                 <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-3.jpg" alt="">
+                    <div class="item__picture">
+                        <img src="./static/img/item.jpg" alt="">
                         <span class="tip">Акция</span>
-                    </a>
+                    </div>
                     <div class="item__summary">
                         <div class="item__price">
                             <span class="price-old">299,00</span>
@@ -213,10 +255,10 @@
                     </div>
                 </div>
                 <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-4.jpg" alt="">
+                    <div class="item__picture">
+                        <img src="./static/img/item.jpg" alt="">
                         <span class="tip">Акция</span>
-                    </a>
+                    </div>
                     <div class="item__summary">
                         <div class="item__price">
                             <span class="price-old">299,00</span>
@@ -237,10 +279,10 @@
                     </div>
                 </div>
                 <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-5.jpg" alt="">
+                    <div class="item__picture">
+                        <img src="./static/img/item.jpg" alt="">
                         <span class="tip">Акция</span>
-                    </a>
+                    </div>
                     <div class="item__summary">
                         <div class="item__price">
                             <span class="price-old">299,00</span>
@@ -261,10 +303,10 @@
                     </div>
                 </div>
                 <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-6.jpg" alt="">
+                    <div class="item__picture">
+                        <img src="./static/img/item.jpg" alt="">
                         <span class="tip">Акция</span>
-                    </a>
+                    </div>
                     <div class="item__summary">
                         <div class="item__price">
                             <span class="price-old">299,00</span>
@@ -288,451 +330,7 @@
         </div>
     </div>
 </section>
-<section class="items-list" id="eclairs">
-    <div class="container">
-        <h2 class="text-center">Эклеры</h2>
 
-        <div class="row mt-5">
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-1.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-2.jpg" alt="">
-                        <span class="tip tip--default">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-3.jpg" alt="">
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-4.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-5.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-6.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-1.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-2.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-3.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-4.jpg" alt="">
-                        <span class="tip tip--default">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-5.jpg" alt="">
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-6.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-1.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-2.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-3.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-5">
-                <div class="item item--default">
-                    <a href="card.html" class="item__picture">
-                        <img src="./static/img/item-4.jpg" alt="">
-                        <span class="tip">Акция</span>
-                    </a>
-                    <div class="item__summary">
-                        <div class="item__price">
-                            <span class="price-old">299,00</span>
-                            <span class="price">199,00</span>
-                            <span class="currency">руб.</span>
-                        </div>
-                        <div class="item__name">
-                            <span>Карамельный</span>
-                        </div>
-                        <div class="item__actions" data-item="0">
-                            <div class="item__quantity">
-                                <button class="item__btn item__btn--minus">-</button>
-                                <span class="item__quantity-text">1</span>
-                                <button class="item__btn item__btn--plus">+</button>
-                            </div>
-                            <a href="#" class="btn btn--default">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <h2>О нашей <br>
-                    кондитерской </h2>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./static/img/about-img.jpg" alt="">
-            </div>
-            <div class="col-lg-5">
-                <p class="my-5">
-                    Основная наша идея — все готовить из тех продуктов, которые мы готовы дать нашим детям. Они —
-                    наши главные дегустаторы, все пробуют, и для нас очень важно их мнение. Если ваниль — то
-                    стручковая, а не ванилин. Если масло — то хорошее, импортное, 82,5 процента, а не спред
-                    или пальмовое масло. Никаких сметанных продуктов, только настоящая 30-процентная сметана. Мы
-                    контролируем все процессы, вместе с командой прорабатываем рецепты, технологические карты,
-                    проводим дегустацию.
-                </p>
-                <a href="#" class="btn btn--default">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</section>
 <footer class="footer" id="footer">
     <div class="container">
         <div class="footer__wrap">

@@ -1,5 +1,5 @@
 @import "imports";
-
+/* stylelint-disable no-descending-specificity */
 body,
 html {
   font-family: 'Futura Book', sans-serif;
@@ -10,6 +10,10 @@ html {
 
 img {
   max-width: 100%;
+}
+
+b {
+  font-weight: bold;
 }
 
 button {
@@ -69,7 +73,6 @@ button {
       transition: 0.4s all;
       background: $white-c;
       z-index: 5;
-
       padding: 12px 0;
 
       .container {
@@ -192,13 +195,12 @@ h2 {
 
 .btn {
   display: inline-block;
-  min-width: 153px;
   font-size: 1.8rem;
-  line-height: 44px;
   text-decoration: none;
   border: 1px solid $default-c;
   transition: 0.3s all;
   text-align: center;
+  padding: 13px 32px 11px;
 
   &--default {
     background: transparent;
@@ -255,6 +257,7 @@ h2 {
 
 .item {
   &__picture {
+    display: block;
     position: relative;
     height: 250px;
     overflow: hidden;
@@ -288,8 +291,8 @@ h2 {
       margin-right: 5px;
     }
 
-    .price-old+.price,
-    .price-old+.price+.currency {
+    .price-old + .price,
+    .price-old + .price + .currency {
       color: $tip-c;
     }
   }
@@ -323,7 +326,7 @@ h2 {
     border: 1px solid $default-c;
     background: $white-c;
     z-index: 1;
-    transition: .2s transform;
+    transition: 0.2s transform;
   }
 
   &__quantity-text {
@@ -334,6 +337,7 @@ h2 {
     position: relative;
     z-index: 2;
     background: $white-c;
+    font-size: 1.4rem;
 
     &:hover {
       background: $default-c;
@@ -348,7 +352,7 @@ h2 {
     background: none;
     font-size: 2.3rem;
     cursor: pointer;
-    transition: .3s all;
+    transition: 0.3s all;
 
     &:hover {
       background: #eee;
@@ -364,7 +368,6 @@ h2 {
   }
 }
 
-
 .items-carousel {
   padding-top: 70px;
   overflow-x: hidden;
@@ -373,8 +376,6 @@ h2 {
 .carousel {
   width: 378px;
   max-width: 100%;
-
-
 
   .slick-slide {
     margin-right: 40px;
@@ -444,7 +445,7 @@ h2 {
 .footer {
   padding: 32px 0;
   margin-top: 10rem;
-  background: #1A1A1A;
+  background: #1a1a1a;
 
   &__wrap {
     display: flex;
@@ -474,6 +475,97 @@ h2 {
       margin-bottom: 12px;
       font-size: 1.4rem;
       line-height: 1.2em;
+    }
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+
+  &__item {
+    position: relative;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-right: 18px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      transform: translate(0, -50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: $default-c;
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    a {
+      color: $default-c;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.card {
+  padding-top: 50px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.card-item {
+  padding-top: 40px;
+
+  &__text {
+    .heading {
+      font-size: 3.2rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      font-size: 2rem;
+      margin: 8px 0;
+      line-height: 1.1em;
+    }
+
+    .item__price {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.items-switch {
+  &__top {
+    margin-bottom: 10px;
+  }
+
+  &__bottom {
+    .slick-slide {
+      margin: 0 5px;
+    }
+
+    .slick-current {
+      border: 1px solid $default-c;
     }
   }
 }
