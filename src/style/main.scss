@@ -160,18 +160,14 @@ p {
       display: flex;
       align-items: center;
       padding: 15px 16px;
-    }
 
-    &__text {
-      margin: 0 5px;
-    }
-
-    .personal-cabinet {
-      transition: 0.3s all;
-
-      path {
-        fill: $default-c;
+      &.personal-cabinet {
         transition: 0.3s all;
+
+        path {
+          fill: $default-c;
+          transition: 0.3s all;
+        }
       }
 
       &.active,
@@ -182,6 +178,10 @@ p {
           fill: #d5a203;
         }
       }
+    }
+
+    &__text {
+      margin: 0 5px;
     }
   }
 }
@@ -344,6 +344,11 @@ h2 {
     margin-bottom: 15px;
   }
 
+  &__category {
+    font-weight: 400;
+    font-size: 1em;
+  }
+
   &__actions {
     display: inline-block;
     position: relative;
@@ -404,6 +409,49 @@ h2 {
     .item__picture {
       img {
         transform: scale(1.2);
+      }
+    }
+  }
+
+  &--order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    margin-top: -1px;
+
+    .item__picture {
+      max-width: 100px;
+      height: 80px;
+    }
+
+    .item__price,
+    .item__name {
+      margin-bottom: 0;
+    }
+
+    .item__summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 40px 0 20px;
+      text-align: initial;
+    }
+
+    .item__quantity {
+      width: 125px;
+      height: 35px;
+      position: static;
+    }
+
+    .item__actions {
+      &:hover {
+        .item__quantity {
+          transform: none;
+        }
       }
     }
   }
@@ -471,6 +519,53 @@ h2 {
 
     .prev {
       transform: rotate(180deg);
+    }
+  }
+}
+
+.carousel-recommended {
+  width: 730px;
+  margin: 0 auto;
+
+  &__wrap {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 780px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      top: 0;
+      box-shadow: 0 0 15px 15px #fff;
+      z-index: 2;
+    }
+
+    &::before {
+      left: -1px;
+    }
+
+    &::after {
+      right: -1px;
+    }
+  }
+
+  .slick-slide {
+    margin: 1px 8px;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .item {
+    &--order {
+      display: flex !important;
+      padding: 16px;
+      border: 1px solid #888;
     }
   }
 }
@@ -779,4 +874,14 @@ h2 {
     color: #d4a203;
     line-height: 1.5em;
   }
+}
+
+.container--order {
+  width: 730px;
+}
+
+.total-sum {
+  font-size: 2rem;
+  text-align: right;
+
 }

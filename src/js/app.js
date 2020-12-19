@@ -29,6 +29,12 @@ $(window).on('load', () => {
     nextArrow: $('.buttons .next'),
   });
 
+  $('.carousel-recommended').slick({
+    infinite: true,
+    slidesToShow: 2,
+    arrows: false,
+  });
+
   $('.items-switch__top').slick({
     infinite: true,
     arrows: false,
