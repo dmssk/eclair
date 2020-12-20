@@ -434,11 +434,13 @@ h2 {
     .item__picture {
       max-width: 100px;
       height: 80px;
+      margin-right: 20px;
     }
 
     .item__price,
     .item__name {
       margin-bottom: 0;
+      margin-right: auto;
     }
 
     .item__summary {
@@ -446,9 +448,10 @@ h2 {
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      padding: 0 40px 0 20px;
+      padding: 0;
       text-align: initial;
     }
+
 
     .item__quantity {
       width: 125px;
@@ -457,6 +460,8 @@ h2 {
     }
 
     .item__actions {
+      margin-right: auto;
+
       &:hover {
         .item__quantity {
           transform: none;
@@ -467,7 +472,7 @@ h2 {
 }
 
 .items-carousel {
-  padding-top: 70px;
+  padding-top: 10px;
   overflow-x: hidden;
 }
 
@@ -534,12 +539,14 @@ h2 {
 
 .carousel-recommended {
   width: 730px;
+  max-width: 100%;
   margin: 0 auto;
 
   &__wrap {
     overflow: hidden;
     margin: 0 auto;
     width: 780px;
+    max-width: 100%;
     position: relative;
 
     &::before,
@@ -737,7 +744,7 @@ h2 {
 .form {
   &--default {
     width: 400px;
-    max-width: 100%;
+    max-width: 92%;
     margin: 0 auto;
   }
 
@@ -821,6 +828,10 @@ h2 {
 
 .cake-form {
   padding: 72px 0;
+
+  .items-carousel {
+    display: none;
+  }
 
   .item {
     cursor: pointer;
@@ -930,6 +941,7 @@ h2 {
 
 .container--order {
   width: 730px;
+  max-width: 100%;
 }
 
 .total-sum {

@@ -37,6 +37,14 @@ $(window).on('load', () => {
     infinite: true,
     slidesToShow: 2,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $('.items-switch__top').slick({
