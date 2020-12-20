@@ -153,17 +153,42 @@
     }
   }
 
-  .order {
-    .flex-between {
-      display: block;
-      text-align: center;
+  .flex-between {
+    display: block;
+    text-align: center;
 
-      a {
-        margin: 10px 0;
+    a {
+      margin: 10px 0;
+    }
+  }
+
+  .total-sum {
+    text-align: center;
+  }
+
+  .order-form {
+    .fields {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form__input {
+      display: block;
+
+      span {
+        margin-bottom: 5px;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+
+      &.score span.input {
+        flex-basis: 100%;
+        width: 100%;
       }
     }
   }
-  .total-sum {
-    text-align: center;
+  .order-total {
+    margin-left: 0;
+    margin-bottom: 30px;
   }
 }

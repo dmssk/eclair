@@ -452,7 +452,6 @@ h2 {
       text-align: initial;
     }
 
-
     .item__quantity {
       width: 125px;
       height: 35px;
@@ -961,8 +960,9 @@ h2 {
     position: relative;
 
     span.input {
-      display: inline-block;
+      display: block;
       position: relative;
+      flex-basis: 70%;
     }
 
     span {
@@ -989,6 +989,11 @@ h2 {
     }
 
     &.score {
+      span.input {
+        display: inline-block;
+        flex-basis: 30%;
+      }
+
       input {
         flex-basis: 30%;
       }
