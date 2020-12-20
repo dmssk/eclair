@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 992px) {
   .header__wrap {
     position: fixed;
     left: 0;
@@ -33,6 +33,7 @@
 
     ul {
       flex-direction: column;
+      align-items: center;
     }
 
     &.active {
@@ -62,7 +63,7 @@
     display: block;
 
     .top {
-      padding-left: 16px;
+      padding: 16px 0 0 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -76,6 +77,10 @@
       ul {
         justify-content: flex-start;
       }
+    }
+
+    .bucket {
+      margin-left: auto;
     }
   }
 
@@ -96,9 +101,24 @@
     }
   }
 
+  .order-total {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__wrap {
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .footer {
     &__wrap {
       flex-direction: column;
+      height: auto;
+      flex-wrap: nowrap;
     }
 
     &__item {
@@ -109,6 +129,11 @@
   .hero {
     min-height: 375px;
     padding: 56px 0;
+    background-image: url('./../static/img/hero-bg-mobile.png');
+
+    &--small {
+      background-image: url('./../static/img/hero-bg-small-mobile.png');
+    }
 
     h1 {
       font-size: 3.6rem;
@@ -162,6 +187,23 @@
     }
   }
 
+  #card {
+    .flex-between {
+      display: flex;
+
+      a {
+        margin: 10px 0;
+      }
+    }
+
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+      width: 220px;
+      display: block;
+    }
+  }
+
   .total-sum {
     text-align: center;
   }
@@ -186,9 +228,5 @@
         width: 100%;
       }
     }
-  }
-  .order-total {
-    margin-left: 0;
-    margin-bottom: 30px;
   }
 }
