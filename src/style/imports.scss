@@ -6,6 +6,8 @@ $container-max-widths: (
         xl: 1380px
 ) !default;
 
+$spacer: 1.7rem !default;
+
 @import "~reset-css";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";

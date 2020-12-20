@@ -758,6 +758,49 @@ h2 {
       font-size: 1.6rem;
       color: $default-c;
       resize: none;
+
+      &:disabled {
+        background: rgba(0, 0, 0, 0.04);
+      }
+    }
+
+    &--radio {
+      padding-left: 50px;
+      position: relative;
+      height: 32px;
+      cursor: pointer;
+
+      input {
+        display: none;
+      }
+
+      .fake-input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: 1px solid $default-c;
+      }
+
+      input:checked + .fake-input {
+        border-color: #d5a203;
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: #d5a203;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
   }
 
@@ -883,5 +926,74 @@ h2 {
 .total-sum {
   font-size: 2rem;
   text-align: right;
+}
+
+.order-form {
+  .fields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__input {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    span.input {
+      display: inline-block;
+      position: relative;
+    }
+
+    span {
+      flex-basis: 30%;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    input {
+      flex-basis: 70%;
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      font-size: 1.6rem;
+      background: none;
+      box-shadow: none;
+      border: none;
+      color: #d5a203;
+    }
+
+    &.score {
+      input {
+        flex-basis: 30%;
+      }
+    }
+  }
+}
+
+.order-total {
+  margin-left: 40px;
+  padding: 40px;
+  background: #f6f6f7;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .item__name {
+      margin-bottom: 0;
+    }
+  }
+
+  &__sum {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
 
 }
