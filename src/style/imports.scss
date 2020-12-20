@@ -1,9 +1,17 @@
 /* stylelint-disable */
 $container-max-widths: (
         sm: 540px,
-        md: 720px,
+        md: 90vw,
         lg: 960px,
         xl: 1380px
+) !default;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
 ) !default;
 
 $spacer: 1.7rem !default;

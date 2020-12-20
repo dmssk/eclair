@@ -22,6 +22,10 @@ $(window).on('load', () => {
     scrollHandler();
   });
 
+  $('.burger').on('click', (e) => {
+    e.preventDefault();
+    $('.header__wrap').toggleClass('active');
+  });
 
   $('.carousel').slick({
     infinite: true,

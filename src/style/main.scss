@@ -128,6 +128,7 @@ p {
     a:not(.logo__link) {
       border-bottom: 1px solid transparent;
       transition: 0.3s border-bottom-color;
+      padding: 15px 12px;
 
       &:focus,
       &:hover {
@@ -183,6 +184,14 @@ p {
     &__text {
       margin: 0 5px;
     }
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  .burger {
+    display: none;
   }
 }
 
@@ -995,5 +1004,6 @@ h2 {
     font-size: 1.6rem;
     font-weight: bold;
   }
-
 }
+
+@import "responsive";
