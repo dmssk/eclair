@@ -43,7 +43,7 @@
                 <a href="news.html" class="bucket__item">
                     Новости
                 </a>
-                <a href="cabinet.html" class="bucket__item personal-cabinet active">
+                <a href="cabinet.html" class="bucket__item personal-cabinet">
                     <i class="bucket__img">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.98185 0C12.8935 0 15.2811 2.38757 15.2811 5.29924C15.2811 8.21091 12.8935 10.5402 9.98185 10.5402C7.07019 10.5402 4.68262 8.21091 4.68262 5.29924C4.68262 2.38757 7.07019 0 9.98185 0ZM9.98185 1.45583C7.88545 1.45583 6.19668 3.20284 6.19668 5.29924C6.19668 7.39564 7.88545 9.08441 9.98185 9.08441C12.0783 9.08441 13.8253 7.39564 13.8253 5.29924C13.8253 3.20284 12.0783 1.45583 9.98185 1.45583Z"
@@ -152,7 +152,7 @@
             </ul>
         </nav>
         <div class="bucket">
-            <a href="cabinet.html" class="bucket__item personal-cabinet active">
+            <a href="cabinet.html" class="bucket__item personal-cabinet">
                 <i class="bucket__img">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.98185 0C12.8935 0 15.2811 2.38757 15.2811 5.29924C15.2811 8.21091 12.8935 10.5402 9.98185 10.5402C7.07019 10.5402 4.68262 8.21091 4.68262 5.29924C4.68262 2.38757 7.07019 0 9.98185 0ZM9.98185 1.45583C7.88545 1.45583 6.19668 3.20284 6.19668 5.29924C6.19668 7.39564 7.88545 9.08441 9.98185 9.08441C12.0783 9.08441 13.8253 7.39564 13.8253 5.29924C13.8253 3.20284 12.0783 1.45583 9.98185 1.45583Z"
@@ -192,42 +192,19 @@
         </a>
     </div>
 </header>
-<section class="collected-score text-center">
-    <h2>Накопительный бонус </h2>
-    <h2 class="score">1 234 бонусных баллов</h2>
+
+<section class="vacancies">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            Вакансии
+        </h2>
+        <div class="vacancies__wrap">
+            <script class="hh-script"
+                    src="https://api.hh.ru/widgets/vacancies/employer?employer_id=818746&locale=RU&links_color=1560b2&border_color=1560b2"></script>
+        </div>
+    </div>
 </section>
 
-<section class="form-wrapper">
-    <h2 class="text-center mb-5">Личные данные</h2>
-    <form action="#" class="form form--default">
-        <div class="fields">
-            <label class="form__input">
-                <span>Ваше имя</span>
-                <input type="text">
-            </label>
-            <label class="form__input">
-                <span>Номер телефона</span>
-                <input type="tel">
-            </label>
-            <label class="form__input">
-                <span>Электронная почта</span>
-                <input type="email">
-            </label>
-            <label class="form__input">
-                <span>Дата рождения</span>
-                <input type="date">
-            </label>
-            <label class="form__input address-field">
-                <span>Адрес для доставки</span>
-                <input type="text">
-            </label>
-        </div>
-        <a href="#" class="btn btn--default add-address">Добавить адрес</a>
-        <div class="form__submit mt-5">
-            <button type="submit" class="submit btn btn--warning">Сохранить</button>
-        </div>
-    </form>
-</section>
 
 <footer class="footer" id="footer">
     <div class="container">
