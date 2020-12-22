@@ -22,6 +22,19 @@ $(window).on('load', () => {
     scrollHandler();
   });
 
+
+  // eslint-disable-next-line no-undef
+  if (!window.localStorage.getItem('cookies_accepted')) {
+    $('.cookies').show();
+  }
+
+  $('.cookies__close').on('click', (e) => {
+    e.preventDefault();
+    $('.cookies').hide();
+    // eslint-disable-next-line no-undef
+    window.localStorage.setItem('cookies_accepted', 'true');
+  });
+
   $('.burger').on('click', (e) => {
     e.preventDefault();
     $('.header__wrap').toggleClass('active');

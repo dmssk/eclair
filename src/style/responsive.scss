@@ -23,12 +23,14 @@
       }
     }
   }
+
   .header__wrap {
     .header__top {
+      flex-direction: column;
+
       .header__nav {
         flex-basis: 60%;
         order: 2;
-        padding-left: 20px;
       }
 
       .logo {
@@ -84,6 +86,8 @@
 
     .bucket {
       order: 2;
+      flex-direction: column;
+      align-items: center;
     }
   }
 

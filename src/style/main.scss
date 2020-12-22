@@ -53,6 +53,7 @@ p {
     a {
       position: relative;
       text-transform: uppercase;
+      transition: 0.3s all;
 
       &::before {
         content: '';
@@ -69,10 +70,12 @@ p {
       &:focus,
       &:hover {
         outline: none;
+        color: #d5a203;
 
         &::before {
           width: 100%;
           opacity: 1;
+          background: #d5a203;
         }
       }
     }
@@ -126,14 +129,12 @@ p {
     padding: 24px 25px;
 
     a:not(.logo__link) {
-      border-bottom: 1px solid transparent;
-      transition: 0.3s border-bottom-color;
       padding: 15px 12px;
 
       &:focus,
       &:hover {
         outline: none;
-        border-bottom-color: $default-c;
+        color: #d5a203;
       }
     }
   }
@@ -1277,6 +1278,38 @@ h2 {
   .form__input {
     font-size: 1.5rem;
     margin-bottom: 20px;
+  }
+}
+
+.cookies {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  padding: 12px 40px 12px 32px;
+  z-index: 49;
+  left: 0;
+  right: 0;
+  width: 80vw;
+
+  &__text {
+    font-size: 1.4rem;
+
+    a {
+      display: inline;
+      padding: 0;
+      margin: 0;
+      color: #d5a203;
+      text-decoration: none;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
   }
 }
 
