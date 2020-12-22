@@ -468,6 +468,44 @@ h2 {
       }
     }
   }
+
+  &--news {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .item__summary {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+      text-align: left;
+      padding: 16px 24px 24px;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      margin-top: auto;
+    }
+
+    .item__name {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .item__description {
+      font-size: 1.6rem;
+      margin-bottom: 34px;
+    }
+
+    .item__subtext {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+
+  }
 }
 
 .items-carousel {
@@ -1020,6 +1058,96 @@ h2 {
   &__sum {
     font-size: 1.6rem;
     font-weight: bold;
+  }
+}
+
+.pagination {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    li,
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $default-c;
+    }
+
+    a {
+      display: block;
+      padding: 2px 4px;
+    }
+
+    li:hover,
+    .active {
+      a {
+        color: #d5a203;
+      }
+    }
+  }
+}
+
+.news-item {
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    font-size: 1.6rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.9rem;
+    }
+
+    h5 {
+      font-size: 1.8rem;
+    }
+
+    h6 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: initial;
+      padding-left: 25px;
+      margin: 10px 0;
+    }
+  }
+
+  &__date {
+    font-weight: bold;
+    font-size: 1.4rem;
   }
 }
 
