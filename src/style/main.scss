@@ -673,6 +673,20 @@ h2 {
       line-height: 1.2em;
     }
   }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    max-width: 135px;
+    padding-top: 10px;
+
+    a {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .breadcrumbs {
@@ -1323,6 +1337,13 @@ h2 {
 .vacancies__wrap {
   display: flex;
   justify-content: center;
+}
+
+.developers,
+.developers a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 @import "responsive";
