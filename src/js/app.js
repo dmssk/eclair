@@ -40,6 +40,19 @@ $(window).on('load', () => {
     $('.header__wrap').toggleClass('active');
   });
 
+  $('.hero__slider').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    prevArrow: $('.slider__buttons--prev'),
+    nextArrow: $('.slider__buttons--next'),
+  });
+
   $('.carousel').slick({
     infinite: true,
     prevArrow: $('.buttons .prev'),

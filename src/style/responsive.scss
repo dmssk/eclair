@@ -166,8 +166,17 @@
 
   .hero {
     min-height: 375px;
-    padding: 56px 0;
-    background-image: url('./../static/img/hero-bg-mobile.png');
+
+    &__slide {
+      padding: 56px 0;
+    }
+
+    .slider__buttons {
+      top: initial;
+      bottom: 50px;
+      transform: none;
+      padding: 0 10px;
+    }
 
     &--small {
       background-image: url('./../static/img/hero-bg-small-mobile.png');
